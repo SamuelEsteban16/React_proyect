@@ -3,13 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import NewComponent from './NewCOmponent';
+import Header from './Header';
+import ComponentePrueba from './ComponentePrueba'
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  document.getElementById('root2')
+);
+ReactDOM.render(
+  <Header />,
+  document.getElementById('header')
+);
+ReactDOM.render(
+  <ComponentePrueba nombre="maria" edad="23" genero="f"/>,
   document.getElementById('root')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
