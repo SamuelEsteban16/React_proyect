@@ -3,21 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import NewComponent from './NewCOmponent';
 import Header from './Header';
+import Contenedor from './Contenedor';
 import ComponentePrueba from './ComponentePrueba'
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root2')
-);
+
 ReactDOM.render(
   <Header />,
   document.getElementById('header')
 );
 ReactDOM.render(
-  <ComponentePrueba nombre="maria" edad="23" genero="f"/>,
+  <Contenedor/>,
   document.getElementById('root')
 );
 
