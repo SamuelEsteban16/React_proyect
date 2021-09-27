@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Contenedor from "./Contenedor";
 
 class Formulario extends Component{
 
@@ -10,6 +11,9 @@ class Formulario extends Component{
 
         }
         this.cambiarNombre = this.cambiarNombre.bind(this);
+        let elemento = document.getElementById("contenedor");
+        console.log(elemento);
+    
     }
     cambiarNombre(e){
         this.setState({
@@ -19,7 +23,7 @@ class Formulario extends Component{
     }
     render(){
         return(
-            <div>
+            <div id="contenedor">
                 <h1>
                     <form action="">
                 <label htmlFor="">Nombre</label><br />
@@ -32,6 +36,17 @@ class Formulario extends Component{
             </div>
 
         )
+    }
+    componentDidMount(){
+        let elemento= document.getElementById("contenedor");
+        console.log(elemento);
+
+    }
+    componentDidUpdate(prevProps, prevState){
+        console.log(prevProps);
+        console.log(prevState);
+        console.log("-------------------");
+
     }
 
 }
