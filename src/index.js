@@ -8,13 +8,10 @@ import Contenedor from './Contenedor';
 import ComponentePrueba from './ComponentePrueba'
 
 ReactDOM.render(
-  <Header />,
+  <App />,
   document.getElementById('header')
 );
-ReactDOM.render(
-  <Contenedor/>,
-  document.getElementById('root')
-);
+
 
 
 // If you want to start measuring performance in your app, pass a function

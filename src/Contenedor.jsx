@@ -1,6 +1,5 @@
 import React from "react";
 import Estudiante from "./Estudiante";
-import Formulario from "./Formulario";
 const estudiantes = [
    {
        "nombre" : "mirage",
@@ -49,10 +48,10 @@ const estudiantes = [
 const Contenedor = () =>(
     <>
     {
-       // estudiantes.map(c => <Estudiante nombre={c.nombre} edad={c.edad} genero={c.genero} imagen={c.imagen} descripcion={c.descripcion}/>)
+       estudiantes.map(c => <Estudiante nombre={c.nombre} edad={c.edad} genero={c.genero} imagen={c.imagen} descripcion={c.descripcion}/>)
     }
 
-    <Formulario></Formulario>
+  
     </>
 
 );
